@@ -1,5 +1,6 @@
 body, html {
     height: 100%;
+    background-color: black;
 }
 .hero-image {
     height: 100vh;
@@ -10,48 +11,6 @@ body, html {
 }
 .hero1 {
     background-image: url("../images/bgs/hero1.jpg");
-}
-.hero2 {
-    background-image: url("../images/bgs/hero2.jpg");
-}
-.hero3 {
-    background-image: url("../images/bgs/hero3.jpg");
-}
-.hero4 {
-    background-image: url("../images/bgs/hero4.jpg");
-}
-.hero5 {
-    background-image: url("../images/bgs/hero5.jpg");
-}
-.hero6 {
-    background-image: url("../images/bgs/hero6.jpg");
-}
-.hero7 {
-    background-image: url("../images/bgs/hero7.jpg");
-}
-.hero8 {
-    background-image: url("../images/bgs/hero8.jpg");
-}
-.hero9 {
-    background-image: url("../images/bgs/hero9.jpg");
-}
-.hero10 {
-    background-image: url("../images/bgs/hero10.jpg");
-}
-.hero11 {
-    background-image: url("../images/bgs/hero11.jpg");
-}
-.hero12 {
-    background-image: url("../images/bgs/hero12.jpg");
-}
-.hero13 {
-    background-image: url("../images/bgs/hero13.jpg");
-}
-.hero14 {
-    background-image: url("../images/bgs/hero14.jpg");
-}
-.hero15 {
-    background-image: url("../images/bgs/hero15.jpg");
 }
 .hero-image .banner {
     height: 35%;
@@ -83,6 +42,12 @@ body, html {
 .w-100 {
     width: 97% !important;
 }
+.expand {
+    font-size: 25px;
+    position: absolute;
+    bottom: 29%;
+    right: 34%;
+}
 .dslr .picture {
     position: absolute;
     z-index: -1;
@@ -96,6 +61,9 @@ body, html {
     }
 }
 @media only screen and (max-width: 900px) {
+    .expand {
+        font-size: 20px;
+    }
     .dslr {
         width: 75%;
     }
@@ -128,5 +96,10 @@ body, html {
 @media only screen and (min-width: 1740px) and (max-width: 1920px){
     .dslr {
         width: 35%;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .expand {
+        font-size: 15px;
     }
 }
