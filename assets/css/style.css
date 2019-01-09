@@ -2,12 +2,56 @@ body, html {
     height: 100%;
 }
 .hero-image {
-    background-image: url("../images/hero1.jpg");
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+}
+.hero1 {
+    background-image: url("../images/bgs/hero1.jpg");
+}
+.hero2 {
+    background-image: url("../images/bgs/hero2.jpg");
+}
+.hero3 {
+    background-image: url("../images/bgs/hero3.jpg");
+}
+.hero4 {
+    background-image: url("../images/bgs/hero4.jpg");
+}
+.hero5 {
+    background-image: url("../images/bgs/hero5.jpg");
+}
+.hero6 {
+    background-image: url("../images/bgs/hero6.jpg");
+}
+.hero7 {
+    background-image: url("../images/bgs/hero7.jpg");
+}
+.hero8 {
+    background-image: url("../images/bgs/hero8.jpg");
+}
+.hero9 {
+    background-image: url("../images/bgs/hero9.jpg");
+}
+.hero10 {
+    background-image: url("../images/bgs/hero10.jpg");
+}
+.hero11 {
+    background-image: url("../images/bgs/hero11.jpg");
+}
+.hero12 {
+    background-image: url("../images/bgs/hero12.jpg");
+}
+.hero13 {
+    background-image: url("../images/bgs/hero13.jpg");
+}
+.hero14 {
+    background-image: url("../images/bgs/hero14.jpg");
+}
+.hero15 {
+    background-image: url("../images/bgs/hero15.jpg");
 }
 .hero-image .banner {
     height: 35%;
@@ -21,8 +65,23 @@ body, html {
     color: white;
     width: 38%;
 }
+.carousel-control-prev {
+    height: 0px;
+    top: 84.6%;
+    right: 27.5%;
+    left: initial;
+}
+.carousel-control-next {
+    height: 0px;
+    top: 84.6%;
+    right: 14.5%;
+    left: initial;
+}
 .dslr img {
     width: 100%;
+}
+.w-100 {
+    width: 97% !important;
 }
 .dslr .picture {
     position: absolute;
