@@ -4,6 +4,17 @@ $("#my-carousel").on('slide.bs.carousel', function(e) {
     currentPicture = e.to+1;
 })
 
+let modal = document.getElementById("myModal");
+let modalImg = document.getElementById('img01');
 $('.expand').on('click', function() {
-    window.open('./assets/images/pics/camera'+currentPicture+'.jpg');
-})
+    modal.style.display = "block";
+    modalImg.src = `./assets/images/pics/camera${currentPicture}.jpg`;
+});
+
+const span = document.getElementsByClassName('close')[0];
+span.onclick = function() {
+    modal.style.display = "none";
+}
+modal.onclick = function() {
+    modal.style.display = "none";
+}
