@@ -78,6 +78,11 @@ body, html {
     height: 100%;
     width: auto;
   }
+  #success .modal-content {
+      margin: 0 auto;
+      width: 50%;
+      height: 50%;
+  }
   /* Add Animation - Zoom in the Modal */
 .modal-content, #caption { 
     animation-name: zoom;
@@ -90,7 +95,7 @@ body, html {
   }
   
   /* The Close Button */
-  .close {
+  .close, .closeSuccess {
     position: absolute;
     top: 15px;
     right: 35px;
@@ -101,7 +106,9 @@ body, html {
   }
   
   .close:hover,
-  .close:focus {
+  .close:focus,
+  .closeSuccess:hover,
+  .closeSuccess:focus {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
@@ -110,6 +117,9 @@ body, html {
     background: white;
 }
 .container {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    height: 100%;
 }
   
 /* 100% Image Width on Smaller Screens */
