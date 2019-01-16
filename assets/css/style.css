@@ -232,7 +232,7 @@ svg {
     display: none;
 }
 
-.form-radio
+.form-radio, .form-checkbox
 {
      -webkit-appearance: none;
      -moz-appearance: none;
@@ -250,7 +250,7 @@ svg {
      margin-right: 7px;
      outline: none;
 }
-.form-radio:checked::before
+.form-radio:checked::before, .form-checkbox:checked::before
 {
      position: absolute;
      font: 13px/1 'Open Sans', sans-serif;
@@ -259,11 +259,11 @@ svg {
      content: '\02143';
      transform: rotate(40deg);
 }
-.form-radio:hover
+.form-radio:hover, .form-checkbox:hover
 {
      background-color: #f7f7f7;
 }
-.form-radio:checked
+.form-radio:checked, .form-checkbox:checked
 {
      background-color: #f1f1f1;
 }

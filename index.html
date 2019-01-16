@@ -87,24 +87,24 @@
                         <div class="form-row">
                             <div class="form-group col-md-4">
                                 <label for="firstName">Full Name</label>
-                                <input type="text" name="name" class="form-control name" id="name" placeholder="John Smith" required>
+                                <input type="text" pattern="^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$" name="name" class="form-control name" id="name" placeholder="John Smith" required>
                             </div>
                             <div class="form-group col-md-4">
                                 <label for="emailAddress">Email Address</label>
-                                <input type="text" name="email_address" class="form-control" id="email_address" placeholder="johnsmith@gmail.com" required>
+                                <input type="email" name="email_address" class="form-control" id="email_address" placeholder="johnsmith@gmail.com" required>
                             </div>
                             <div class="form-group col-md-4">
                                 <label for="guests">Number of guests (including yourself)</label>
-                                <input type="text" name="guests" class="form-control" id="guests" required>
+                                <input type="number" name="guests" class="form-control" id="guests" required>
                                 <small class="text-muted">We may not be able to accommodate your entire party size.</small>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="inputAddress">Mail Address</label><br/>
+                            <label for="inputAddress">Mailing Address</label><br/>
                             <input type="text" name="home_address" class="form-control" id="home_address" placeholder="1234 Main St, Huntington Beach, CA 90742" required>
                         </div>
                         <div class="form-group">
-                            <input type="radio" name="radio" id="radio-one" class="form-radio"/><label for="radio-one">I am aware that this is not a real reservation, this is only for informational purposes. The actual invitation will be mailed later this year.</label><br/>
+                            <input type="checkbox" name="radio" id="check-one" class="form-checkbox"/><label for="check-one">I am aware that this is not a real reservation, this is only for informational purposes. The actual invitation will be mailed later this year.</label><br/>
                         </div>
                         <button type="submit" class="submitbtn btn btn-primary">Submit</button>
                     </form>
