@@ -334,7 +334,7 @@ label[for=radio-two] {
         font-size: 13px;
     }
 }
-
+/* 
 @media screen and (min-width: 320px) and (max-width: 1100px) and (orientation: landscape) {
     html {
         transform: rotate(-90deg);
@@ -345,4 +345,4 @@ label[for=radio-two] {
         top: 100%;
         left: 0;
     }
-}
+} */
