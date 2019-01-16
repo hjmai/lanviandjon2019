@@ -4,7 +4,7 @@ body, html {
     scroll-behavior: smooth;
 }
 .hero-image {
-    height: 100vh;
+    height: 110vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -38,6 +38,7 @@ body, html {
     left: initial;
 }
 .dslr img {
+    object-fit: scale-down;
     width: 100%;
 }
 .w-100 {
@@ -115,7 +116,7 @@ body, html {
     cursor: pointer;
   }
 .white-bg {
-    height: 100vh;
+    height: 110vh;
     background: white;
     position: relative;
 }
