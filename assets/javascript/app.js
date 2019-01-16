@@ -47,7 +47,6 @@ function fillInAddress() {
   // Get the place details from the autocomplete object.
   var place = autocomplete.getPlace();
   address = place.formatted_address.split(", USA")[0];
-  console.log(address);
   $('#home_address').val(address);
 }
 
@@ -85,11 +84,14 @@ $(".rsvp-form").submit(function(e) {
                             <circle class="path circle" fill="none" stroke="#73AF55" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"/>
                             <polyline class="path check" fill="none" stroke="#73AF55" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
                         </svg>`;
-            $("#yay").html(successCheckmark)
+            $(".loader-container").html(successCheckmark)
             $('.name').val('');
             $('#email_address').val('');
             $('#home_address').val('');
             $('#guests').val('');
+            setTimeout(() => {
+                modalSuccess.style.display = "none";
+            }, 1500);
         }
     });
 });
