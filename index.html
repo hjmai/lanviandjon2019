@@ -65,11 +65,27 @@
             <div class="row">
                 <div class="col-md-12">
                     <h2 class="text-center"><em>Can you make it?</em></h2>
-                    <form  id="form-submission">
+
+                    <input type="radio" name="radio" id="radio-one" class="form-radio"/><label for="radio-one">I can't wait to show off my moves!</label><br/>
+                    <input type="radio" name="radio" id="radio-two" class="form-radio"/><label for="radio-two">You'll have to dance without me.</label>
+
+                    <form id="no-submission" class="rsvp-form hidden">
+                        <div class="form-row align-items-center">
+                            <div class="col-auto">
+                                <label class="sr-only" for="inlineFormInput">Name</label>
+                                <input type="text" class="form-control mb-2" name="name" id="name" class='name' placeholder="Full Name">
+                            </div>
+                            <div class="col-auto">
+                                <button type="submit" class="btn btn-primary mb-2">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <form  id="form-submission" class="rsvp-form hidden">
                         <div class="form-row">
                             <div class="form-group col-md-4">
                                 <label for="firstName">Full Name</label>
-                                <input type="text" name="name" class="form-control" id="name" placeholder="John Smith" required>
+                                <input type="text" name="name" class="form-control name" id="name" placeholder="John Smith" required>
                             </div>
                             <div class="form-group col-md-4">
                                 <label for="emailAddress">Email Address</label>
@@ -99,8 +115,11 @@
         <span class="closeSuccess">&times;</span>
 
         <!-- Modal Content -->
-        <div class="modal-content">Success!</div>
+        <div id="yay" class="modal-content text-center">
+            <div class="loader"></div>
+        </div>
     </div>
+    
 
     <!-- Javascript tags -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -113,7 +132,7 @@
     <script src="./assets/javascript/app.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPhhyM0kuOFu8cihsrhQbqAYvPNtvxd44&libraries=places&callback=initAutocomplete"
     async defer></script>        
-
+    #success > div
 </body>
 
 </html>

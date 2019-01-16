@@ -60,27 +60,46 @@ successSpan.onclick = function() {
 modalSuccess.onclick = function() {
     modalSuccess.style.display = "none";
 }
-$("#form-submission").submit(function(e) {
-    var form = $('#form-submission'),
-        url = ``;
+$(".rsvp-form").submit(function(e) {
+    var form = $(this),
+        url = ``,
+        rsvp = '';
+
+    if(form.attr('id') == 'no-submission') {
+        rsvp = 'no';
+    } else if(form.attr('id') == 'form-submission') {
+        rsvp = 'yes';
+    }
 
     e.preventDefault();
-    url = `https://script.google.com/macros/s/AKfycbxJ0aFoZv0MhXNAncPRyUFcVfR0Y41lUJqtGeZ3QXdvBcnUZZA/exec`;
+    url = `https://script.google.com/macros/s/AKfycbxJ0aFoZv0MhXNAncPRyUFcVfR0Y41lUJqtGeZ3QXdvBcnUZZA/exec?rsvp=${rsvp}`;
+    modalSuccess.style.display = "block";
     var jqxhr = $.ajax({
         url: url,
         method: "GET",
         dataType: "json",
         data: form.serializeObject()
     }).then(function(res){
-        if(res.result == 'success'){
-            $('#name').val('');
+        if(res.result == 'success') {
+            var successCheckmark = `<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+                            <circle class="path circle" fill="none" stroke="#73AF55" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"/>
+                            <polyline class="path check" fill="none" stroke="#73AF55" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
+                        </svg>`;
+            $("#yay").html(successCheckmark)
+            $('.name').val('');
             $('#email_address').val('');
             $('#home_address').val('');
             $('#guests').val('');
-            modalSuccess.style.display = "block";
         }
     });
-})
+});
+// $('#no-submission').submit(function(e) {
+//     var form = $('#no-submission'),
+//     url = ``;
+
+//     e.preventDefault();
+//     url = 
+// })
 
 $(document).ready(function(){
     $(window).keydown(function(event){
@@ -88,6 +107,14 @@ $(document).ready(function(){
             event.preventDefault();
             return false;
         }
+    });
+    $('#radio-one').on('click', function() {
+        $('#no-submission').addClass('hidden');
+        $('#form-submission').removeClass('hidden');
+    });
+    $('#radio-two').on('click', function() {
+        $('#form-submission').addClass('hidden');
+        $('#no-submission').removeClass('hidden');
     })
 })
 
