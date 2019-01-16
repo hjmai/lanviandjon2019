@@ -1,6 +1,5 @@
 body, html {
     background-color: black;
-    height: 100%;
     scroll-behavior: smooth;
 }
 .hero-image {
@@ -115,11 +114,6 @@ body, html {
     text-decoration: none;
     cursor: pointer;
   }
-.white-bg {
-    height: 110vh;
-    background: white;
-    position: relative;
-}
 .rsvp-button {
     position: absolute;
     margin-top: 20px;
@@ -223,6 +217,7 @@ svg {
   
 
 .container {
+    background-color: white;
     padding-top: 5vh;
     padding-bottom: 5vh;
     height: 100%;
@@ -332,8 +327,14 @@ label[for=radio-two] {
     .expand {
         font-size: 15px;
     }
+    .white-bg {
+        height: 140vh;
+    }
 }
 @media only screen and (max-width: 500px) {
+    label[for=radio-one], label[for=radio-two] {
+        font-size: 14px;
+    }
     .expand {
         font-size: 13px;
     }
