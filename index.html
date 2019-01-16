@@ -75,7 +75,7 @@
                         <div class="form-row align-items-center">
                             <div class="col-auto">
                                 <label class="sr-only" for="inlineFormInput">Name</label>
-                                <input type="text" class="form-control mb-2" name="name" id="name" class='name' placeholder="Full Name">
+                                <input type="text" class="form-control mb-2" name="name" id="name" class='name' placeholder="Full Name" required>
                             </div>
                             <div class="col-auto">
                                 <button type="submit" class="btn btn-primary mb-2">Submit</button>
@@ -106,7 +106,7 @@
                         <div class="form-group">
                             <input type="checkbox" name="radio" id="check-one" class="form-checkbox"/><label for="check-one">I am aware that this is not a real reservation, this is only for informational purposes. The actual invitation will be mailed later this year.</label><br/>
                         </div>
-                        <button type="submit" class="submitbtn btn btn-primary">Submit</button>
+                        <button type="submit" id="submissionBtn" class="submitbtn btn btn-primary" disabled>Submit</button>
                     </form>
                 </div>
             </div>

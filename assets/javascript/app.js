@@ -102,6 +102,13 @@ $(".rsvp-form").submit(function(e) {
 // })
 
 $(document).ready(function(){
+    $('#check-one').click(function() {
+        if($(this).is(':checked')) {
+            $('#submissionBtn').removeAttr('disabled');
+        } else {
+            $('#submissionBtn').attr('disabled', true);
+        }
+    })
     $(window).keydown(function(event){
         if(event.keyCode == 13) {
             event.preventDefault();
