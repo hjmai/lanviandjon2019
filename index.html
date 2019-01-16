@@ -10,6 +10,7 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
         crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
@@ -50,6 +51,7 @@
 
         <!-- Button trigger modal -->
         <a class="expand" role="button"><i class="fas fa-search-plus" data-toggle="modal" data-target="#exampleModal"></i></a>
+        <a href="#radio-one" class="btn rsvp-button col-sm-4"><b>RSVP</b></a>
     </div>
     <div id="myModal" class="modal">
         <!-- The Close Button -->
@@ -64,7 +66,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h2 class="text-center"><em>Can you make it?</em></h2>
+                    <h2 style="font-family: Permanent Marker"><em>Can you make it?</em></h2>
 
                     <input type="radio" name="radio" id="radio-one" class="form-radio"/><label for="radio-one">I can't wait to show off my moves!</label><br/>
                     <input type="radio" name="radio" id="radio-two" class="form-radio"/><label for="radio-two">You'll have to dance without me.</label>
@@ -98,9 +100,11 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="inputAddress">Home Address</label><br/>
-                            <small class="text-muted">Please enter in your full address</small>
+                            <label for="inputAddress">Mail Address</label><br/>
                             <input type="text" name="home_address" class="form-control" id="home_address" placeholder="1234 Main St, Huntington Beach, CA 90742" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="radio" name="radio" id="radio-one" class="form-radio"/><label for="radio-one">I am aware that this is not a real reservation, this is only for informational purposes. The actual invitation will be mailed later this year.</label><br/>
                         </div>
                         <button type="submit" class="submitbtn btn btn-primary">Submit</button>
                     </form>

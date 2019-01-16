@@ -1,6 +1,7 @@
 body, html {
     background-color: black;
     height: 100%;
+    scroll-behavior: smooth;
 }
 .hero-image {
     height: 100vh;
@@ -26,13 +27,13 @@ body, html {
 }
 .carousel-control-prev {
     height: 0px;
-    top: 85.6%;
+    top: 81.6%;
     right: 29.5%;
     left: initial;
 }
 .carousel-control-next {
     height: 0px;
-    top: 85.6%;
+    top: 81.6%;
     right: 19.5%;
     left: initial;
 }
@@ -45,15 +46,19 @@ body, html {
 .expand {
     font-size: 20px;
     position: absolute;
-    bottom: 26.5%;
+    bottom: 30.5%;
     right: 36.5%;
 }
 .dslr .picture {
     position: absolute;
     z-index: -1;
     width: 37%;
-    bottom: 9%;
+    bottom: 14%;
     left: 21%;
+}
+.rsvp-button {
+    background-color: #FF9E89;
+    color: white;
 }
 .modal {
     display: none; /* Hidden by default */
@@ -114,6 +119,7 @@ body, html {
     cursor: pointer;
   }
 .white-bg {
+    height: 100vh;
     background: white;
 }
 
