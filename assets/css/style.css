@@ -121,9 +121,8 @@ body, html {
 }
 .rsvp-button {
     position: absolute;
+    margin-top: 20px;
     left: 33%;
-    background-color: #FFAE00;
-    color: white;
 }
 
 .loader {
