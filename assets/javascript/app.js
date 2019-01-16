@@ -93,15 +93,13 @@ $(".rsvp-form").submit(function(e) {
         }
     });
 });
-// $('#no-submission').submit(function(e) {
-//     var form = $('#no-submission'),
-//     url = ``;
-
-//     e.preventDefault();
-//     url = 
-// })
 
 $(document).ready(function(){
+    $('#radio-one').on('click', function() {
+        setTimeout(function() {
+            window.location.href = "#form-submission";
+        }, 0);
+    })
     $('#check-one').click(function() {
         if($(this).is(':checked')) {
             $('#submissionBtn').removeAttr('disabled');

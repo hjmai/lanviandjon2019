@@ -1,6 +1,9 @@
 body, html {
-    background-color: black;
+    /* background-color: black; */
     scroll-behavior: smooth;
+}
+.black-bg {
+    background-color: black;
 }
 .hero-image {
     height: 110vh;
