@@ -124,7 +124,11 @@ body, html {
     margin-top: 20px;
     left: 33%;
 }
-
+.form-header {
+    font-family: Permanent Marker;
+    font-size: 3em;
+    padding-bottom: 30px;
+}
 .loader {
     border: 16px solid #f3f3f3; /* Light grey */
     border-top: 16px solid #3498db; /* Blue */
