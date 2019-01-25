@@ -97,6 +97,13 @@ $(".rsvp-form").submit(function(e) {
 });
 
 $(document).ready(function(){
+    $('#silly-btn').on('click', function() {
+        var input = $('#silly-field').val().trim().toLowerCase();
+        if(input == 'gitmarriage') {
+            $('#actual-form').removeClass('hidden');
+            $('#silly-form').addClass('hidden');
+        }
+    })
     $('#radio-one').on('click', function() {
         setTimeout(function() {
             window.location.href = "#form-submission";

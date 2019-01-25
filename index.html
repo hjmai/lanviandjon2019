@@ -53,7 +53,7 @@
 
         <!-- Button trigger modal -->
         <a class="expand" role="button"><i class="fas fa-search-plus" data-toggle="modal" data-target="#exampleModal"></i></a>
-        <a href="#radio-one" class="btn btn-primary rsvp-button col-4"><b>RSVP</b></a>
+        <a href="#silly-form" class="btn btn-primary rsvp-button col-4"><b>RSVP</b></a>
     </div>
 </div>
     <div id="myModal" class="modal">
@@ -67,7 +67,12 @@
     <!-- RSVP Form -->
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
+                <div id='silly-form' class="col-md-12">
+                    <h2 class="form-header text-center">Enter silly password!</h2>
+                    <input type="text" id="silly-field" name="sillypass" class="form-control">
+                    <a id="silly-btn" class="btn btn-primary">Submit</a>
+                </div>
+                <div id='actual-form' class="col-md-12 hidden">
                     <h2 class="form-header"><em>Can you make it?</em></h2>
 
                     <input type="radio" name="radio" id="radio-one" class="form-radio"/><label for="radio-one">Yes, I can't wait to show off my moves!</label><br/>
