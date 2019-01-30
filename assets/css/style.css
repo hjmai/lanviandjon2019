@@ -127,6 +127,9 @@ body, html {
     margin-top: 20px;
     left: 33%;
 }
+#no-submission {
+    line-height: 3;
+}
 .form-header {
     font-family: Permanent Marker;
     font-size: 3em;
@@ -234,7 +237,9 @@ svg {
     height: 100%;
     max-width: 900px;
 }
-
+.center-div {
+    margin: 0 auto;
+}
 #silly-btn {
     margin-top: 10px;
     margin-bottom: 10px;
