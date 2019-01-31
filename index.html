@@ -74,10 +74,10 @@
                 </div>
                 <div id='actual-form' class="col-md-12 hidden text-center">
                     <h2 class="form-header"><em>Can you make it?</em></h2>
-
-                    <input type="radio" name="radio" id="radio-one" class="form-radio"/><label for="radio-one">Yes, I can't wait to show off my moves!</label><br/>
-                    <input type="radio" name="radio" id="radio-two" class="form-radio"/><label for="radio-two">No, you'll have to dance without me.</label>
-
+                    <div style="display: inline-block; text-align: left;">
+                        <input type="radio" name="radio" id="radio-one" class="form-radio"/><label for="radio-one">Yes, I can't wait to show off my moves!</label><br/>
+                        <input type="radio" name="radio" id="radio-two" class="form-radio"/><label for="radio-two">No, you'll have to dance without me.</label>
+                    </div>
                     <form id="no-submission" class="rsvp-form hidden">
                         <div class="col-5 center-div">
                             <input type="text" class="form-control col-12 center-div" name="name" id="name" class='name' placeholder="Full Name" required>
@@ -87,7 +87,7 @@
                         </div>
                     </form>
 
-                    <form  id="form-submission" class="rsvp-form hidden">
+                    <form  id="form-submission" class="rsvp-form hidden text-left">
                         <div class="form-row">
                             <div class="form-group col-md-4">
                                 <label for="firstName">Full Name</label>
@@ -116,7 +116,7 @@
                             <input type="text" name="home_address" class="form-control" id="home_address" placeholder="1234 Main St, Huntington Beach, CA 90742" required>
                         </div>
                         <div class="form-group">
-                            <input type="checkbox" name="radio" id="check-one" class="form-checkbox"/><label for="check-one">I am aware that this is not a real reservation, this is only for informational purposes. The actual invitation will be mailed later this year.</label><br/>
+                            <label for="check-one"><input type="checkbox" name="radio" id="check-one" class="form-checkbox"/>I am aware that this is not a real reservation, this is only for informational purposes. The actual invitation will be mailed later this year.</label><br/>
                         </div>
                         <button type="submit" id="submissionBtn" class="submitbtn btn btn-primary" disabled>Submit</button>
                     </form>
