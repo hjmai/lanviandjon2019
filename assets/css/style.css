@@ -298,7 +298,12 @@ label
 label[for=radio-two] {
     padding-bottom: 20px;
 }
-
+.success-checkmark {
+    margin: auto;
+    width: 100px;
+    height: 200px;
+    border-radius: 3px;
+}
 
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 1024px) {
